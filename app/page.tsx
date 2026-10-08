@@ -3,15 +3,17 @@
 import { useState } from 'react'
 import { ArrowDown, ArrowUpRight, ChevronLeft, ChevronRight, Flower2, X } from 'lucide-react'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const memories = [
-  { src: '/photos/us-smiling.jpg', alt: 'Shailu hugging me from behind, both of us smiling', caption: 'The beginning', position: 'center 62%' },
-  { src: '/photos/mirror-hug.jpg', alt: 'A mirror selfie of us hugging', caption: 'Everything in between', position: 'center 55%' },
-  { src: '/photos/shailu-garden.jpg', alt: 'Shailu smiling among the plants', caption: 'A moment worth keeping', position: 'center 35%' },
-  { src: '/photos/birthday-rose.jpg', alt: 'Shailu holding a rose bouquet beside a birthday plate', caption: 'The first flower', position: 'center 45%' },
-  { src: '/photos/crochet-rose.jpg', alt: 'A red crochet rose held between our hands', caption: 'Little things', position: 'center 55%' },
-  { src: '/photos/cheek-kiss.jpg', alt: 'Shailu kissing my cheek', caption: 'Our first month', position: 'center 60%' },
-  { src: '/photos/milkshakes.jpg', alt: 'Shailu smiling behind two milkshakes, in black and white', caption: 'Still becoming us', position: 'center 30%' },
-  { src: '/photos/cozy-hug.jpg', alt: 'Me kissing Shailu on the cheek while we hug', caption: 'A thousand little moments', position: 'center 40%' },
+  { src: `${basePath}/photos/us-smiling.jpg`, alt: 'Shailu hugging me from behind, both of us smiling', caption: 'The beginning', position: 'center 62%' },
+  { src: `${basePath}/photos/mirror-hug.jpg`, alt: 'A mirror selfie of us hugging', caption: 'Everything in between', position: 'center 55%' },
+  { src: `${basePath}/photos/shailu-garden.jpg`, alt: 'Shailu smiling among the plants', caption: 'A moment worth keeping', position: 'center 35%' },
+  { src: `${basePath}/photos/birthday-rose.jpg`, alt: 'Shailu holding a rose bouquet beside a birthday plate', caption: 'The first flower', position: 'center 45%' },
+  { src: `${basePath}/photos/crochet-rose.jpg`, alt: 'A red crochet rose held between our hands', caption: 'Little things', position: 'center 55%' },
+  { src: `${basePath}/photos/cheek-kiss.jpg`, alt: 'Shailu kissing my cheek', caption: 'Our first month', position: 'center 60%' },
+  { src: `${basePath}/photos/milkshakes.jpg`, alt: 'Shailu smiling behind two milkshakes, in black and white', caption: 'Still becoming us', position: 'center 30%' },
+  { src: `${basePath}/photos/cozy-hug.jpg`, alt: 'Me kissing Shailu on the cheek while we hug', caption: 'A thousand little moments', position: 'center 40%' },
 ]
 
 const timeline = [
